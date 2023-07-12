@@ -27,7 +27,9 @@
         <tbody>
             {% for user in users: %}
             <tr>
+              <!-- table rows -->
                 {% for key in user: %}
+                <!-- table data -->
                 <td>{{user[key]}}</td>
                 {% endfor %}
                 <td>{{user['first_name']}} {{user['last_name']}}</td>
